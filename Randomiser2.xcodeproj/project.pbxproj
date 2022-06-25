@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		5EB454F428642F5A00EF9DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB454F328642F5A00EF9DDC /* AppDelegate.swift */; };
 		5EB454F628642F5A00EF9DDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB454F528642F5A00EF9DDC /* SceneDelegate.swift */; };
-		5EB454F828642F5A00EF9DDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB454F728642F5A00EF9DDC /* ViewController.swift */; };
+		5EB454F828642F5A00EF9DDC /* RandomisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB454F728642F5A00EF9DDC /* RandomisViewController.swift */; };
 		5EB454FB28642F5A00EF9DDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB454F928642F5A00EF9DDC /* Main.storyboard */; };
 		5EB454FD28642F5C00EF9DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EB454FC28642F5C00EF9DDC /* Assets.xcassets */; };
 		5EB4550028642F5C00EF9DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB454FE28642F5C00EF9DDC /* LaunchScreen.storyboard */; };
+		5EB4550B2864354300EF9DDC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB4550A2864354300EF9DDC /* SettingsViewController.swift */; };
+		5EB4550F2864367F00EF9DDC /* RandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB4550E2864367F00EF9DDC /* RandomNumber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5EB454F028642F5A00EF9DDC /* Randomiser2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Randomiser2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB454F328642F5A00EF9DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EB454F528642F5A00EF9DDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5EB454F728642F5A00EF9DDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5EB454F728642F5A00EF9DDC /* RandomisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomisViewController.swift; sourceTree = "<group>"; };
 		5EB454FA28642F5A00EF9DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EB454FC28642F5C00EF9DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EB454FF28642F5C00EF9DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EB4550128642F5C00EF9DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EB4550A2864354300EF9DDC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5EB4550E2864367F00EF9DDC /* RandomNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		5EB454F228642F5A00EF9DDC /* Randomiser2 */ = {
 			isa = PBXGroup;
 			children = (
-				5EB454F328642F5A00EF9DDC /* AppDelegate.swift */,
-				5EB454F528642F5A00EF9DDC /* SceneDelegate.swift */,
-				5EB454F728642F5A00EF9DDC /* ViewController.swift */,
-				5EB454F928642F5A00EF9DDC /* Main.storyboard */,
-				5EB454FC28642F5C00EF9DDC /* Assets.xcassets */,
-				5EB454FE28642F5C00EF9DDC /* LaunchScreen.storyboard */,
-				5EB4550128642F5C00EF9DDC /* Info.plist */,
+				5EB4550D2864367100EF9DDC /* Models */,
+				5EB455092864352100EF9DDC /* ViewControllers */,
+				5EB455082864351500EF9DDC /* Storyboards */,
+				5EB4550C2864355800EF9DDC /* Resourses */,
+				5EB4550728642F6900EF9DDC /* Supporting */,
 			);
 			path = Randomiser2;
+			sourceTree = "<group>";
+		};
+		5EB4550728642F6900EF9DDC /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				5EB454F328642F5A00EF9DDC /* AppDelegate.swift */,
+				5EB454F528642F5A00EF9DDC /* SceneDelegate.swift */,
+				5EB4550128642F5C00EF9DDC /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		5EB455082864351500EF9DDC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5EB454F928642F5A00EF9DDC /* Main.storyboard */,
+				5EB454FE28642F5C00EF9DDC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5EB455092864352100EF9DDC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5EB454F728642F5A00EF9DDC /* RandomisViewController.swift */,
+				5EB4550A2864354300EF9DDC /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5EB4550C2864355800EF9DDC /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				5EB454FC28642F5C00EF9DDC /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		5EB4550D2864367100EF9DDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5EB4550E2864367F00EF9DDC /* RandomNumber.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EB454F828642F5A00EF9DDC /* ViewController.swift in Sources */,
+				5EB4550F2864367F00EF9DDC /* RandomNumber.swift in Sources */,
+				5EB454F828642F5A00EF9DDC /* RandomisViewController.swift in Sources */,
 				5EB454F428642F5A00EF9DDC /* AppDelegate.swift in Sources */,
 				5EB454F628642F5A00EF9DDC /* SceneDelegate.swift in Sources */,
+				5EB4550B2864354300EF9DDC /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5V5TAGZG5N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Randomiser2/Info.plist;
+				INFOPLIST_FILE = Randomiser2/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5V5TAGZG5N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Randomiser2/Info.plist;
+				INFOPLIST_FILE = Randomiser2/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
